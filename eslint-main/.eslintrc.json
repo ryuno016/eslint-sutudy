@@ -14,12 +14,15 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react"
-  ],
+"settings": {
+  "react": {
+    "version": "detect"
+  }
+},
   "rules": {
-    "no-console": "error",      // console.logの禁止
-    "eqeqeq": ["error", "always"], // 厳密等価演算子の強制
-    "curly": "error"           // 波括弧の強制
+    "no-console": "error",               // console.logの禁止
+    "eqeqeq": ["error", "always"],       // 厳密等価演算子の強制
+    "curly": "error",                    // 波括弧の強制
+    "react/jsx-key": "warn"              // key属性の不足に対する警告
   }
 }
